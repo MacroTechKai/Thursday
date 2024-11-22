@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div>
+        <img id = "logo" src="public/images/logo.png" alt="Logo name: Master Recipes" width="112" height="73" >
+            <nav>
+            <ul class="ulContainer">
+                <li><a class="item" href="index.html"><strong>HOME</strong></a></li>
+                <li><a class="item" href="search.html"><strong>SEARCH</strong></a></li>
+                <!-- <li><a class="item" href="article.html"><strong>ARTICLE</strong></a></li> -->
+                <li><a class="item" href="contact.html"><strong>CONTACT</strong></a></li>
+                <li><a class="item" href="account.html"><strong>LOGIN</strong></a></li>
+            </ul>
+            </nav>
+        </div>
+</header>
+<main>
+    <p>Feel free to contact me if you have any questions!</p>
+<div class="contactcontainer">
+    <form action="submit.php" method="post">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="recipe">Recipe:</label>
+        <input type="text" id="recipe" name="recipe" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit" class="submit-button">submit</button>
+    </form>
+    <img id="tabletalk" src="public/images/tabletalk.png" alt="Table Talk" width="900" height="315" >
+</div>
+</main>
+<footer>
+    Copyright @ 2024 MealMaster Group
+</footer>
+</body>
+</html>

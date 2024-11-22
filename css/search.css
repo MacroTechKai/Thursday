@@ -1,0 +1,93 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+
+
+
+/* 搜索栏样式 */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.search-container input {
+    width: 60%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-container button {
+    padding: 0.5rem 1rem;
+    margin-left: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+/* 过滤按钮样式 */
+#filters {
+    margin: 1rem auto;
+    width: 80%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #218838;
+}
+
+/* 搜索结果样式 */
+#results {
+    margin: 1rem auto;
+    width: 80%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+}
+
+.result:last-child {
+    border-bottom: none;
+}
+
+.result h3 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+}
+
+.result p {
+    margin: 0.2rem 0;
+    color: #555;
+}

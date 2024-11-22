@@ -1,0 +1,5 @@
+For the search page, it need to be dynamic:
+
+SEARCH: key in keyword in search box, then, still in the same page, show the result using javascript validation.
+
+FILTERING: click cuisine, show a drop-right list: Indian, Chinese, Japanese..., MUST still in the same page. click Indian, will direct to a new page.
