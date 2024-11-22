@@ -62,7 +62,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     ?>
 
     <!-- provide form to log in -->
-    <form action="index.php" method="post">
+    <form action="sign_in.php" method="post">
         <fieldset>
             <legend>Login Now!</legend>
             <p><label for="email">Email:</label>
@@ -73,6 +73,8 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
             </p>
         </fieldset>
         <button type="submit" name="login">Login</button>
+        <button type="reset" class="reset">Reset</button>
+        <span>Not a member? <a href="sign_up.php">Sign up</a></span>
     </form>
     <?php include "footerEm.php"; ?>
 </body>
