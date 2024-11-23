@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../css/wstyles.css">
+
 </head>
 <body>
 <?php include("headerEm.php"); ?>
@@ -19,13 +20,11 @@
         <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="recipe">Recipe:</label>
-        <input type="text" id="recipe" name="recipe" required>
-
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
         
         <button type="submit" class="submit-button">submit</button>
+        <button type="reset" class="reset">Reset</button>
     </form>
     <img id="tabletalk" src="../images/signin.jpg" alt="Table Talk" width="588" height="391" >
 </div>

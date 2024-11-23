@@ -45,23 +45,20 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 <body>
     <h1>Home Page</h1>
     <?php
-    if (isset($_SESSION['valid_user'])) {
-        echo '<p>You are logged in as: ' . $_SESSION['valid_user'] . ' successfully!!!<br /></p>';
-        echo "<br>";
-        echo "<br>";
-
-
-        echo '<a href="log_out.php">Log out</a></p>';
+if (isset($_SESSION['valid_user'])) {
+    echo '<p>You are logged in as: ' . $_SESSION['valid_user'] . ' successfully!!!<br /></p>';
+    echo "<br>";
+    echo "<br>";
+    echo '<a href="log_out.php">Log out</a></p>';
+} else {
+    if (isset($login_error)) {
+        echo '<p>' . $login_error . '</p>';
     } else {
-        if (isset($login_error)) {
-            echo '<p>' . $login_error . '</p>';
-        } else {
-            echo '<p>You are not logged in.</p>';
-        }
+        echo '<p>You are not logged in.</p>';
     }
-    ?>
 
-    <!-- provide form to log in -->
+    // 显示登录表单仅在用户未登录时
+    ?>
     <form action="sign_in.php" method="post">
         <fieldset>
             <legend>Login Now!</legend>
@@ -76,7 +73,11 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         <button type="reset" class="reset">Reset</button>
         <span>Not a member? <a href="sign_up.php">Sign up</a></span>
     </form>
+    <?php
+}
+?>
+
     <?php include "footerEm.php"; ?>
 </body>
-
+<!-- test stashes -->
 </html>

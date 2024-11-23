@@ -9,7 +9,7 @@ $value = isset($_GET[$type]) ? mysqli_real_escape_string($conn, $_GET[$type]) : 
 if (!empty($type) && !empty($value)) {
     // 使用大小写不敏感查询
     $sql = "SELECT name, description, cuisine FROM recipe WHERE LOWER($type) = LOWER('$value')";
-    echo "SQL Query: $sql<br>"; // 调试用
+    // echo "SQL Query: $sql<br>"; // 调试用
 
     $result = mysqli_query($conn, $sql);
 
